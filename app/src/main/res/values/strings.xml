@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">seaTravel</string>
+    <string name="button_not_register">Tidak memiliki akun? <font color='red'>Daftar Sekarang</font></string>
+    <string name="after_register">Sudah memiliki akun? <font color='red'>Login Sekarang</font></string>
+    <string name="batal">Batal</string>
+    <string name="keluar">Keluar</string>
+
+
+    <string-array name="asal">
+        <item> </item>
+        <item>Tj. Priok, Jakarta</item>
+        <item>Tj. Perak, Surabaya</item>
+        <item>Tj. Mas, Semarang</item>
+        <item>Merak, Banten</item>
+        <item>Bakauheni, Lampung</item>
+        <item>Harbour Bay, Batam</item>
+        <item>Sunda Kelapa, Jakarta</item>
+        <item>Soekarno-Hatta, Makassar</item>
+    </string-array>
+
+    <string-array name="tujuan">
+        <item> </item>
+        <item>Port Klang, Malaysia</item>
+        <item>Port of Johor, Malaysia</item>
+        <item>Laem Chabang, Thailand</item>
+        <item>Khlong Thoi, Bangkok</item>
+        <item>Hai Phong Port, Vietnam</item>
+        <item>Port of Davao, Filipina</item>
+        <item>Port of Yangon, Myanmar</item>
+        <item>Port of Singapore, Singapore</item>
+        <item>Sihanoukville Port, Kamboja</item>
+
+    </string-array>
+
+    <string-array name="jumlah_dewasa">
+        <item> </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="jumlah_anak">
+        <item> </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="jumlah_kamar">
+        <item> </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="kamar">
+    <item> </item>
+    <item>Celebrity Edge</item>
+    <item>Grand Suite</item>
+    <item>Large Balcony</item>
+    <item>Ocean View</item>
+    <item>Royal Suite</item>
+    <item>Single Ocean View</item>
+    <item>Twin Balcony</item>
+    </string-array>
+</resources>
