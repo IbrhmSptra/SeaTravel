@@ -23,8 +23,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var btnMoveToSignUp: Button
     lateinit var etEmail: EditText
     lateinit var etPassword: EditText
-    lateinit var et_nama : EditText
-    lateinit var et_gender : EditText
+
 
 
 
@@ -41,8 +40,7 @@ class LoginActivity : AppCompatActivity() {
         btnMoveToSignUp = findViewById(R.id.btn_sign_up)
         etEmail = findViewById(R.id.Email)
         etPassword = findViewById(R.id.Password)
-        et_nama = findViewById(R.id.etNama)
-        et_gender = findViewById(R.id.etJk)
+
 
 
 
@@ -86,8 +84,6 @@ class LoginActivity : AppCompatActivity() {
                 )
 
                 var editor = sharedPreference.edit()
-                editor.putString("nama", et_nama.text.toString())
-                editor.putString("gender" , et_gender.text.toString())
                 editor.putString("email", email)
                 editor.commit()
 

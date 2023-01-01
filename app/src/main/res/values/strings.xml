@@ -66,13 +66,13 @@
     </string-array>
 
     <string-array name="kamar">
-    <item> </item>
-    <item>Celebrity Edge</item>
-    <item>Grand Suite</item>
-    <item>Large Balcony</item>
-    <item>Ocean View</item>
-    <item>Royal Suite</item>
-    <item>Single Ocean View</item>
-    <item>Twin Balcony</item>
+        <item> </item>
+        <item>Celebrity Edge</item>
+        <item>Grand Suite</item>
+        <item>Large Balcony</item>
+        <item>Ocean View</item>
+        <item>Royal Suite</item>
+        <item>Single Ocean View</item>
+        <item>Twin Balcony</item>
     </string-array>
 </resources>

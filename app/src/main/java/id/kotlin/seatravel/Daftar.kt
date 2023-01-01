@@ -1,5 +1,6 @@
 package id.kotlin.seatravel
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,6 +18,8 @@ class Daftar : AppCompatActivity() {
     lateinit var btnSignUp : Button
     lateinit var etEmail : EditText
     lateinit var etPassword : EditText
+    lateinit var etnama : EditText
+    lateinit var etgender : EditText
 
 
 
@@ -34,6 +37,8 @@ class Daftar : AppCompatActivity() {
         btnSignUp = findViewById(R.id.btn_sign_up)
         etEmail = findViewById(R.id.et_regis_email)
         etPassword = findViewById(R.id.et_regis_password)
+        etnama = findViewById(R.id.etnama)
+        etgender = findViewById(R.id.etgender)
 
 
         btnSignUp.setOnClickListener {
@@ -64,6 +69,18 @@ class Daftar : AppCompatActivity() {
             var msg = ""
             if (!failed) {
                 msg = "Pendaftaran Berhasil!"
+
+
+                //panggil shared pref
+                val sharedPreference = getSharedPreferences(
+                    "app_preference", Context.MODE_PRIVATE
+                )
+                //masukan nama dan gender ke shared pref
+                var editor = sharedPreference.edit()
+                editor.putString("nama", etnama.text.toString())
+                editor.putString("gender" , etgender.text.toString())
+                editor.commit()
+
             } else {
                 var errorMessage = jsonResponse.get("error_description")
                 msg += errorMessage

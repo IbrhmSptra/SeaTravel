@@ -23,49 +23,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.073" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColorHint="#938f8c"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25">
-
-        <EditText
-            android:id="@+id/etNama"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Nama"
-            android:inputType="textEmailAddress"
-            android:textColor="#000000"
-            android:textColorHint="#938f8c" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColorHint="#938f8c"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40">
-
-        <EditText
-            android:id="@+id/etJk"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Jenis Kelamin"
-            android:inputType="textEmailAddress"
-            android:textColor="#000000"
-            android:textColorHint="#938f8c" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_login"
@@ -77,7 +34,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.731" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="409dp"
@@ -88,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55">
+        app:layout_constraintVertical_bias="0.35">
 
         <EditText
             android:id="@+id/Email"
@@ -110,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.70"
+        app:layout_constraintVertical_bias="0.50"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="#938f8c">
 
@@ -136,6 +93,6 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.900" />
+        app:layout_constraintVertical_bias="0.839" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

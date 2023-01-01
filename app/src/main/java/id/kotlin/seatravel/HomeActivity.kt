@@ -2,10 +2,8 @@ package id.kotlin.seatravel
 
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
@@ -31,7 +29,7 @@ class HomeActivity : AppCompatActivity() {
         }
         riwayat=findViewById(R.id.historyMenu)
         riwayat.setOnClickListener {
-            startActivity(Intent(this, Riwayat::class.java))
+            startActivity(Intent(this, mytiket::class.java))
         }
         boooking=findViewById(R.id.Booking)
         boooking.setOnClickListener {

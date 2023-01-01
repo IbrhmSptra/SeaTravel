@@ -74,7 +74,7 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/asal"
+                        android:id="@+id/spasal"
                         android:layout_width="match_parent"
                         android:layout_height="50dp" />
 
@@ -88,7 +88,7 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/tujuan"
+                        android:id="@+id/sptujuan"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1" />
@@ -117,23 +117,29 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:gravity="center"
-                        android:text="Waktu Perjalanan"
+                        android:text="Tanggal Perjalanan"
                         android:textAllCaps="true"
                         android:textColor="@color/dark_blue"
                         android:textSize="19sp"
                         android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/etTanggal"
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btntgl"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_baseline_calendar_month_24"
-                        android:drawablePadding="20dp"
-                        android:hint="Tanggal Berangkat"
-                        android:datePickerMode="calendar"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@color/dark_blue"
-                        android:textColorHint="#949798" />
+                        android:layout_height="30dp"
+                        app:cardBackgroundColor="#E0E0E0"
+                        app:cardCornerRadius="15dp">
+                        <TextView
+                            android:id="@+id/tvtgl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:text="Set Tanggal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -174,9 +180,9 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/dewasa"
+                        android:id="@+id/spdewasa"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -187,7 +193,7 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/anak"
+                        android:id="@+id/spanak"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginBottom="8dp" />

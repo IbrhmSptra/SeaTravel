@@ -8,23 +8,30 @@ import android.widget.TextView
 
 class Profil : AppCompatActivity() {
 
-    lateinit var etRegisEmail : TextView
-    lateinit var etNama : EditText
-    lateinit var etJk : EditText
+    lateinit var tvEmail : TextView
+    lateinit var tvgender : TextView
+    lateinit var tvname : TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
 
-        etRegisEmail = findViewById(R.id.lblName)
+        tvEmail = findViewById(R.id.lblEmail)
+        tvgender = findViewById(R.id.lbJenisKelamin)
+        tvname = findViewById(R.id.lblName)
 
 
         val sharedPreference =  getSharedPreferences(
             "app_preference", Context.MODE_PRIVATE
         )
 
-        var name = sharedPreference.getString("email", "[No email found]").toString()
-        etRegisEmail.text = name
+        var email = sharedPreference.getString("email", "[No email found]").toString()
+        var nama = sharedPreference.getString("nama", "").toString()
+        var gender = sharedPreference.getString("gender" , "").toString()
+        tvEmail.text = email
+        tvname.text = nama
+        tvgender.text = gender
 
     }
 
